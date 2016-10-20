@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS LESSON - Class SELECTOR</title>
+<style>
+body{
+   background-image:url('image1.jpg');
+   background-size:cover;
+}
+#mydiv{
+    height:150px;
+	width:100%;
+	background-color:rgba(255,255,255,0.6);
+	margin-top:265px;
+	border-top: solid 4px #009999;
+	border-bottom: solid 4px #009999;
+}
+label{
+    font-size:24px;
+	font-family:Arial,courier, sans serif;
+	margin :20px;
+	color:#004d4d;
+}
+.textbox{
+    height:30px;
+	width:200px;
+	border-radius:5px;
+	border:1px solid #009999;
+}
+.textbox:hover{
+width:250px;
+}
+.textbox:focus{
+width:250px;
+}
+
+.mybutton{
+	border-radius:4px;
+	background-color:#009999;
+	color:#fff;
+	font-size:24px;
+	border:1px solid #009999;
+	
+}
+form{
+   padding-top:5px;
+}
+#message{
+font-size:14px;
+	font-family:Arial,courier, sans serif;
+	margin :20px;
+	color:#004d4d;
+}
+#loginspan{
+ font-size:18px;
+	font-family:Arial,courier, sans serif;
+	margin :20px;
+	color:red;
+}
+</style>
+</head>
+<body>
+<div id="mydiv" align="center">
+  <form>
+    <p id="message"><span id="loginspan">Login FORM : </span>Enter user name and password to Login</p>
+     <label>Username : </label><input type="text" class="textbox">
+	 <label>Password : </label><input class="textbox" type="text"> 
+	 <span style="padding:1px;"><input type="submit" value="Login" class="mybutton"></span>
+  </form>
+</div>
+</body>
+</html>
